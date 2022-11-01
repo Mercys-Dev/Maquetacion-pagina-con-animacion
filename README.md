@@ -1,4 +1,4 @@
-# Pagina para tienda Lego 💰
+# Pagina para tienda Lego 🦸
 
 Este es un proyecto de practica donde maquetamos una pagina completa y responsive para una tienda de Lego desde las clases de [ Platzi](http:/https://platzi.com/home/ " Platzi")
 
