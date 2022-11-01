@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes Lego</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <!--Mian Content-->
+        <section class="container">
+            <nav class="navbar">
+                <div class="navbar__content">
+                    <img src="lego.png" alt="logo de lego">
+                    <ul>
+                        <li><a href="/">EXCLUSIVOS</a></li>
+                        <li><a href="/">NUEVOS</a></li>
+                        <li><a href="/">GIFT CARDS</a></li>
+                        <li><a href="/">FIND A STORE</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="main-content">
+                <p>Diseña tu</p>
+                <h1>Súper Héroe</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum perferendis voluptatibus eos molestiae, dolorem molestias totam error placeat sunt soluta quae fugiat magni ea modi iusto perspiciatis</p>
+            </section>
+
+            <section class="side-content">
+                <div></div>
+                <p>Superman</p>
+                <img src="super-man.png" alt="Superman modo lego">
+            </section>
+
+            <section class="footer">
+                <div id="button1">
+                    <img src="spiderman.png" alt="Spiderman lego">
+                </div>
+                <div id="button2">
+                    <img src="robin.png" alt="Robin lego">
+                </div>
+                <div id="button3">
+                    <img src="batman.webp" alt="Batman lego">
+                </div>
+            </section>
+
+        </section>
+
+        <!--Loader-->
+        <section class="loader"> 
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <!--Modal-->
+        <section class="modal hidden">
+
+            <div class="modal_container Spiderman-Hidden Spiderman">
+                <img class="modal_content-close" src="https://img.icons8.com/windows/50/000000/macos-close.png"/>
+
+                <div class="modal_content--slider">
+                    <input type="radio" name="slider-1" id="radio-1">
+                    <input type="radio" name="slider-1" id="radio-2">
+                    <input type="radio" name="slider-1" id="radio-3" checked>
+
+                    <div class="cards">
+                        <label for="radio-1" id="card1" class="card" name="slider-1">
+                            <img src="./spider-man_1.webp" alt="">
+                        </label>
+                        <label for="radio-2" id="card2" class="card" name="slider-1">
+                            <img src="spider-man-2_.webp" alt="">
+                        </label>
+                        <label for="radio-3" id="card3" class="card" name="slider-1">
+                            <img src="spider-man-3_.webp" alt="">
+                        </label>
+
+                    </div>
+                </div>
+                                    
+                <div class="wanted">
+                    <a href="#">Lo quiero!</a>
+                </div>
+
+            </div>
+            <div class="modal_container Robin-Hidden Robin">
+                <img class="modal_content-close close-robin" src="https://img.icons8.com/windows/50/000000/macos-close.png"/>
+
+                <div class="modal_content--slider">
+                    <input type="radio" name="slider-2" id="radio-4">
+                    <input type="radio" name="slider-2" id="radio-5">
+                    <input type="radio" name="slider-2" id="radio-6" checked>
+
+                    <div class="cards">
+                        <label for="radio-4" id="card4" class="card" name="slider-2">
+                            <img src="robin.png" alt="">
+                        </label>
+                        <label for="radio-5" id="card5" class="card" name="slider-2">
+                            <img src="robin2.png" alt="">
+                        </label>
+                        <label for="radio-6" id="card6" class="card" name="slider-2">
+                            <img src="Robin 3.png" alt="">
+                        </label>
+
+                    </div>
+                </div>
+                                    
+                <div class="wanted">
+                    <a href="#">Lo quiero!</a>
+                </div>
+
+            </div>
+            <div class="modal_container Batman-Hidden Batman">
+                <img class="modal_content-close close-batman" src="https://img.icons8.com/windows/50/000000/macos-close.png"/>
+
+                <div class="modal_content--slider">
+                    <input type="radio" name="slider-3" id="radio-7">
+                    <input type="radio" name="slider-3" id="radio-8">
+                    <input type="radio" name="slider-3" id="radio-9" checked>
+
+                    <div class="cards">
+                        <label for="radio-7" id="card7" class="card" name="slider-3">
+                            <img src="batman.webp" alt="">
+                        </label>
+                        <label for="radio-8" id="card8" class="card" name="slider-3">
+                            <img src="batman 2.png" alt="">
+                        </label>
+                        <label for="radio-9" id="card9" class="card" name="slider-3">
+                            <img src="batman 3.png" alt="">
+                        </label>
+
+                    </div>
+                </div>
+                                    
+                <div class="wanted">
+                    <a href="#">Lo quiero!</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    const modal = document.querySelector('.modal')
+    const robin = document.querySelector('.Robin')
+    const batman = document.querySelector('.Batman')
+    const spidy = document.querySelector('.Spiderman')
+    const button1 = document.querySelector('#button1')
+    const button2 = document.querySelector('#button2')
+    const button3 = document.querySelector('#button3')
+    const close = document.querySelector('.modal_content-close')
+    const close2 = document.querySelector('.close-robin')
+    const close3 = document.querySelector('.close-batman')
+
+    button1.addEventListener('click', () =>{
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+        spidy.classList.remove('Spiderman-Hidden')
+        robin.classList.add('Robin-Hidden')
+        batman.classList.add('Batman-Hidden')
+
+    })
+
+    button2.addEventListener('click', () =>{
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+        robin.classList.remove('Robin-Hidden')
+        batman.classList.add('Batman-Hidden')
+        spidy.classList.add('Spiderman-Hidden')
+    })
+
+    button3.addEventListener('click', () =>{
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+        robin.classList.add('Robin-Hidden')
+        batman.classList.remove('Batman-Hidden')
+        spidy.classList.add('Spiderman-Hidden')
+    })
+
+    close.addEventListener('click', () =>{
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+    close2.addEventListener('click', () =>{
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+    close3.addEventListener('click', () =>{
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+</script>
+</html>
